@@ -37,7 +37,7 @@ export default function Contact() {
                         />
                       </div>
                     </Col>
-                    <div class="col-lg-12">
+                    <Col lg={12}>
                       <div class="form-group mt-2">
                         <input
                           class="form-control"
@@ -45,8 +45,8 @@ export default function Contact() {
                           placeholder="phone"
                         />
                       </div>
-                    </div>
-                    <div class="col-lg-12">
+                    </Col>
+                    <Col lg={12}>
                       <div class="form-group mt-2">
                         <textarea
                           class="form-control"
@@ -54,15 +54,15 @@ export default function Contact() {
                           placeholder="message"
                         ></textarea>
                       </div>
-                    </div>
-                    <div class="col-lg-12">
+                    </Col>
+                    <Col lg={12}>
                       <button
                         type="submit"
                         class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"
                       >
                         <span>SUBMIT</span>
                       </button>
-                    </div>
+                    </Col>
                   </Row>
                 </Form>
               </div>
