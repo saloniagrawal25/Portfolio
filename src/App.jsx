@@ -1,22 +1,27 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import Navbar from "./Components/Header";
-import Footer from "./Components/Footer";
+import Navbar from "./components/Header";
+import Footer from "./components/Footer";
 import "./styles/app.scss";
-import Pages from "./Pages";
+import Pages from "./pages";
+//import Contact from "./pages/Contact"
 
 function App() {
   return (
-    <div>
+    // <div className="stars">
+    //   <div className="twinkling">
+    <div className="site">
       <BrowserRouter>
         <Navbar />
-        <div>
+        <div className="content">
           <Pages />
         </div>
         <Footer />
       </BrowserRouter>
     </div>
+    //   </div>
+    // </div>
   );
 }
 

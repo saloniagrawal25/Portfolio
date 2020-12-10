@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Achievements from "./Achievements";
+import Contact from "./Contact";
 import Education from "./Education";
 import Experience from "./Experience";
 import Profile from "./Profile";
@@ -18,6 +19,7 @@ export default function Pages() {
         <Route path="/" exact component={Profile} />
         <Route path="/projects" exact component={Projects} />
         <Route path="/techStack" exact component={TechStack} />
+        <Route path="/contact" exact component={Contact} />
       </Switch>
     </div>
   );
