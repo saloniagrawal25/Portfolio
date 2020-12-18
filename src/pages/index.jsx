@@ -16,7 +16,7 @@ export default function Pages() {
         <Route path="/achievements" exact component={Achievements} />
         <Route path="/education" exact component={Education} />
         <Route path="/experience" exact component={Experience} />
-        <Route path="/" exact component={Profile} />
+        <Route path="/" exact  ><Profile /><TechStack/><Projects/><Contact/></Route>
         <Route path="/projects" exact component={Projects} />
         <Route path="/techStack" exact component={TechStack} />
         <Route path="/contact" exact component={Contact} />
