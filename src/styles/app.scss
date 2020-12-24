@@ -1,8 +1,5 @@
 $primary-color: #00cba9;
 
-// h1{
-//   color: $primary-color;
-// }
 
 .site {
   display: flex;
@@ -16,11 +13,13 @@ $primary-color: #00cba9;
 
 ::-moz-selection {
   /* Code for Firefox */
-  background: $primary-color;
+  color: $primary-color;
+  background-color: white;
 }
 
 ::selection {
-  background: $primary-color;
+  color: $primary-color;
+  background-color: white;
 }
 .link {
   text-decoration: none;
