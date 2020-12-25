@@ -16,7 +16,7 @@ export default function Contact() {
             </Col>
             <Col lg={5}>
               <div className="contact-box ml-3">
-                <h1>Quick Contact</h1>
+                <h1>Get In Touch</h1>
                 <Form
                   className="mt-4"
                   action="mailto:saloniagrawal250797@gmail.com"
@@ -26,45 +26,45 @@ export default function Contact() {
                 >
                   <Row>
                     <Col lg={12}>
-                      <div className="form-group mt-2">
+                      <Form.Group className="mt-2">
                         <input
                           className="form-control"
                           type="text"
                           placeholder="name"
                         />
-                      </div>
+                      </Form.Group>
                     </Col>
                     <Col lg={12}>
-                      <div className="form-group mt-2">
+                      <Form.Group className="mt-2">
                         <input
                           className="form-control"
                           type="email"
                           placeholder="email address"
                         />
-                      </div>
+                      </Form.Group>
                     </Col>
                     <Col lg={12}>
-                      <div className="form-group mt-2">
+                      <Form.Group className="mt-2">
                         <input
                           className="form-control"
                           type="text"
                           placeholder="phone"
                         />
-                      </div>
+                      </Form.Group>
                     </Col>
                     <Col lg={12}>
-                      <div className="form-group mt-2">
+                      <Form.Group className="mt-2">
                         <textarea
                           className="form-control"
                           rows="3"
                           placeholder="message"
                         ></textarea>
-                      </div>
+                      </Form.Group>
                     </Col>
                     <Col lg={12}>
                       <button
                         type="submit"
-                        class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"
+                        className="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"
                       >
                         <span>SUBMIT</span>
                       </button>

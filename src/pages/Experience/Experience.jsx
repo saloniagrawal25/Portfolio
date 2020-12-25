@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Experience() {
+export default function Experience({userData}) {
+
   return (
     <div>
-      <h2>Experience</h2>
+    <p>{userData.basics.name}</p>
     </div>
   );
 }

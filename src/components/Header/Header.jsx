@@ -5,7 +5,7 @@ import "./header.scss";
 
 function Header() {
   return (
-      <Navbar collapseOnSelect expand="lg" >
+      <Navbar collapseOnSelect expand="lg" className="navbar-dark">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto nav-elements">

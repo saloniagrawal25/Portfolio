@@ -7,18 +7,18 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Profile from "./Profile";
 import Projects from "./Projects";
-import TechStack from "./TechStack";
+import Skills from "./Skills";
 
-export default function Pages() {
+export default function Pages({userData}) {
   return (
     <div>
       <Switch>
         <Route path="/achievements" exact component={Achievements} />
         <Route path="/education" exact component={Education} />
-        <Route path="/experience" exact component={Experience} />
-        <Route path="/" exact  ><Profile /><TechStack/><Projects/><Contact/></Route>
+        <Route path="/experience" exact ><Experience userData={userData}/></Route>
+        <Route path="/" exact  ><Profile /><Skills/><Projects/><Contact/></Route>
         <Route path="/projects" exact component={Projects} />
-        <Route path="/techStack" exact component={TechStack} />
+        <Route path="/skills" exact component={Skills} />
         <Route path="/contact" exact component={Contact} />
       </Switch>
     </div>

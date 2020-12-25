@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Profile() {
   return (
     <div>
-      <Container className="container">
+      <Container>
         <Row>
           <Col lg={5} xs={12}>
             <div className="main-heading">
