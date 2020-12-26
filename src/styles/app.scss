@@ -1,6 +1,5 @@
 $primary-color: #00cba9;
 
-
 .site {
   display: flex;
   min-height: 100vh;
@@ -33,11 +32,12 @@ $primary-color: #00cba9;
   color: $primary-color;
 }
 
-img, footer{
+img,
+footer {
   animation: image-load 1.5s ease-in-out;
 }
 
-@keyframes image-load{
+@keyframes image-load {
   0% {
     opacity: 0;
   }

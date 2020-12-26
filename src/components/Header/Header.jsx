@@ -5,14 +5,22 @@ import "./header.scss";
 
 function Header() {
   return (
-      <Navbar collapseOnSelect expand="lg" className="navbar-dark">
+    <Navbar collapseOnSelect expand="lg" className="navbar-dark">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto nav-elements">
-        <NavLink to="/" className="link">About Me</NavLink>
-         <NavLink to="/experience" className="link">Experience</NavLink>
-         <NavLink to="/skills" className="link">Skills</NavLink>
-         <NavLink to="/contact" className="link">Contact Me</NavLink>
+          <NavLink to="/" className="link">
+            About Me
+          </NavLink>
+          <NavLink to="/experience" className="link">
+            Experience
+          </NavLink>
+          <NavLink to="/user/projects" className="link">
+            Projects
+          </NavLink>
+          <NavLink to="/contact" className="link">
+            Contact Me
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

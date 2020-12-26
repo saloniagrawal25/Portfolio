@@ -13,18 +13,99 @@ import "./skills.scss";
 export default function Skills() {
   return (
     <div className="skills">
-     <Container>
-      <Row>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={cSharpLogo} width={96} height={96} alt="cSharp"/><Figure.Caption><span>C# Language</span></Figure.Caption></Figure></Col>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={sqlLogo} width={96} height={96} alt="SQL Server"  /><Figure.Caption><span>SQL Server</span></Figure.Caption></Figure></Col>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={mongodbLogo} width={96} height={96} alt="MongoDB"  /><Figure.Caption><span>MongoDB</span></Figure.Caption></Figure></Col>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={reactLogo} width={96} height={96} alt="React"  /><Figure.Caption><span>React</span></Figure.Caption></Figure></Col>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={htmlLogo} width={96} height={96} alt="HTML"  /><Figure.Caption><span>HTML</span></Figure.Caption></Figure></Col> 
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={cssLogo} alt="CSS" width={96} height={96} /><Figure.Caption><span>CSS</span></Figure.Caption></Figure></Col>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={sassLogo} width={96} height={96} alt="Sass"  /><Figure.Caption><span>Sass</span></Figure.Caption></Figure></Col>
-        <Col lg={true} md={3} xs={6}><Figure><Figure.Image src={githubLogo} width={96} height={96} alt="Github"  /><Figure.Caption><span>Github</span></Figure.Caption></Figure></Col>
-     </Row>
-     </Container>
+      <Container>
+        <Row>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image
+                src={cSharpLogo}
+                width={96}
+                height={96}
+                alt="cSharp"
+              />
+              <Figure.Caption>
+                <span>C# Language</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image
+                src={sqlLogo}
+                width={96}
+                height={96}
+                alt="SQL Server"
+              />
+              <Figure.Caption>
+                <span>SQL Server</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image
+                src={mongodbLogo}
+                width={96}
+                height={96}
+                alt="MongoDB"
+              />
+              <Figure.Caption>
+                <span>MongoDB</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image
+                src={reactLogo}
+                width={96}
+                height={96}
+                alt="React"
+              />
+              <Figure.Caption>
+                <span>React</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image src={htmlLogo} width={96} height={96} alt="HTML" />
+              <Figure.Caption>
+                <span>HTML</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image src={cssLogo} alt="CSS" width={96} height={96} />
+              <Figure.Caption>
+                <span>CSS</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image src={sassLogo} width={96} height={96} alt="Sass" />
+              <Figure.Caption>
+                <span>Sass</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+          <Col lg={true} md={3} xs={6}>
+            <Figure>
+              <Figure.Image
+                src={githubLogo}
+                width={96}
+                height={96}
+                alt="Github"
+              />
+              <Figure.Caption>
+                <span>Github</span>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

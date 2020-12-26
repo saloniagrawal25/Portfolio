@@ -1,11 +1,10 @@
-import React,{ useState, useEffect}  from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { EatLoading  } from 'react-loadingg';
+import { EatLoading } from "react-loadingg";
 import Navbar from "./components/Header";
 import Footer from "./components/Footer";
 import Pages from "./pages";
 import "./styles/app.scss";
-
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -16,7 +15,7 @@ function App() {
       .then((userData) => setUserData(userData));
   }, []);
 
-  if (userData===null) {
+  if (userData === null) {
     return (
       <div
         style={{
@@ -25,7 +24,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <EatLoading speed={2} size={"large"}/>
+        <EatLoading speed={2} size={"large"} />
       </div>
     );
   }
@@ -35,7 +34,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <div className="content">
-          <Pages userData={userData}/>
+          <Pages userData={userData} />
         </div>
         <Footer />
       </BrowserRouter>

@@ -9,15 +9,24 @@ import Profile from "./Profile";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
-export default function Pages({userData}) {
+export default function Pages({ userData }) {
   return (
     <div>
       <Switch>
         <Route path="/achievements" exact component={Achievements} />
         <Route path="/education" exact component={Education} />
-        <Route path="/experience" exact ><Experience userData={userData}/></Route>
-        <Route path="/" exact  ><Profile /><Skills/><Projects/><Contact/></Route>
-        <Route path="/projects" exact component={Projects} />
+        <Route path="/experience" exact>
+          <Experience userData={userData} />
+        </Route>
+        <Route path="/" exact>
+          <Profile />
+          <Skills />
+          <Projects userData={userData} collapse={true} />
+          <Contact />
+        </Route>
+        <Route path="/user/projects" exact>
+          <Projects userData={userData} collapse={false} />
+        </Route>
         <Route path="/skills" exact component={Skills} />
         <Route path="/contact" exact component={Contact} />
       </Switch>

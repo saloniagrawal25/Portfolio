@@ -1,0 +1,57 @@
+.projects .cards {
+  margin: 1rem;
+  max-height: 280px;
+  color: #333646;
+  background-color: #d0cde1;
+}
+
+.projects h1 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.projects img:hover {
+  opacity: 0.75;
+}
+
+.projects .card-title {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.projects .sourceCode {
+  border-color: #333646;
+  color: #333646;
+}
+.projects .sourceCode:hover {
+  background-color: #333646;
+  border-color: #333646;
+}
+.projects .language {
+  background-color: #00cba9;
+  color: white;
+  margin-left: 0.25rem;
+}
+.projects .library {
+  background-color: #ff4f7b;
+  color: white;
+  margin-left: 0.25rem;
+}
+
+.projects .cards:hover {
+  animation: cardShake 0.5s;
+  animation-iteration-count: 1;
+}
+@keyframes cardShake {
+  0% {
+    transform: translate(-1px, 2px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  100% {
+    transform: translate(-1px, 2px) rotate(1deg);
+  }
+}
