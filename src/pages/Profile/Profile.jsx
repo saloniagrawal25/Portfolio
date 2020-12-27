@@ -11,7 +11,7 @@ export default function Profile() {
           <Col lg={5} xs={12}>
             <div className="main-heading">
               <h1>Hi!! I am Saloni</h1>
-              <h1>Software Developer</h1>
+              <h2>I build things for the web.</h2>
             </div>
           </Col>
           <Col lg={7} xs={12}>

@@ -57,12 +57,12 @@ export default function Projects({ userData }, collapse) {
                     </Button>
                     <br />
                     {project.languages.map((language, i) => (
-                      <Badge pill key={i} className="language">
+                      <Badge key={i} className="language">
                         {language}
                       </Badge>
                     ))}
                     {project.libraries.map((library, i) => (
-                      <Badge pill key={i} className="library">
+                      <Badge key={i} className="library">
                         {library}
                       </Badge>
                     ))}

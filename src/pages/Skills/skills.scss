@@ -1,22 +1,25 @@
 .skills {
   background-image: linear-gradient(
     to right bottom,
-    #98cbc3,
-    #90c8bf,
-    #88c6bc,
-    #80c3b8,
-    #78c0b4,
-    #70c0b2,
-    #67c0b1,
-    #5dc0af,
-    #50c3ae,
-    #40c6ad,
-    #2cc8ab,
-    #00cba9
+    #d0cde1,
+    #cfcbe5,
+    #cecae8,
+    #cdc8ec,
+    #ccc6ef,
+    #c8c1ef,
+    #c4bdef,
+    #c0b8ef,
+    #b8afec,
+    #b0a6e8,
+    #a89de5,
+    #a094e1
   );
   color: #333646;
 }
-
+.skills h1 {
+  padding-bottom: 4rem;
+  font-weight: bold;
+}
 .skills span {
   color: #333646;
 }

@@ -2,7 +2,22 @@
   margin: 1rem;
   max-height: 280px;
   color: #333646;
-  background-color: #d0cde1;
+  background-image: linear-gradient(
+    to right bottom,
+    #d0cde1,
+    #cfcbe5,
+    #cecae8,
+    #cdc8ec,
+    #ccc6ef,
+    #c8c1ef,
+    #c4bdef,
+    #c0b8ef,
+    #b8afec,
+    #b0a6e8,
+    #a89de5,
+    #a094e1
+  );
+  border: none;
 }
 
 .projects h1 {

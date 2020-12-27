@@ -14,6 +14,7 @@ export default function Skills() {
   return (
     <div className="skills">
       <Container>
+        <h1>Skills</h1>
         <Row>
           <Col lg={true} md={3} xs={6}>
             <Figure>

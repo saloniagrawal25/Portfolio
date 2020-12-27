@@ -22,6 +22,8 @@ export default function Pages({ userData }) {
           <Profile />
           <Skills />
           <Projects userData={userData} collapse={true} />
+          <Education userData={userData} />
+          <Experience userData={userData} />
           <Contact />
         </Route>
         <Route path="/user/projects" exact>
