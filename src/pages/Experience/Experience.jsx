@@ -42,7 +42,7 @@ export default function Experience({ userData }) {
                     </p>
                     <ul>
                       {workData.highlights.map((highlight, index) => (
-                        <li>{highlight}</li>
+                        <li key={index}>{highlight}</li>
                       ))}
                     </ul>
                   </Tab.Pane>

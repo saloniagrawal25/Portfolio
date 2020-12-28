@@ -24,7 +24,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <EatLoading speed={2} size={"large"} />
+        <EatLoading size={"large"} />
       </div>
     );
   }

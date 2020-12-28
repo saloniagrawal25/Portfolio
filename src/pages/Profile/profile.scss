@@ -1,14 +1,31 @@
-.main-heading{
+.main-heading {
   padding: 5rem 0 2rem;
   text-align: left;
 }
 
-.main-heading h1{
+.main-heading h1 {
   font: {
     weight: bold;
   }
 }
 
-.container{
+.container {
   padding: 5rem 0;
+}
+
+.profile a {
+  text-decoration: none;
+  color: #e6e7e9;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+.profile a:hover {
+  text-decoration: none;
+  color: #00cba9;
+}
+
+.profile .icons {
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
 }

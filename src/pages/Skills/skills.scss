@@ -1,27 +1,14 @@
 .skills {
-  background-image: linear-gradient(
-    to right bottom,
-    #d0cde1,
-    #cfcbe5,
-    #cecae8,
-    #cdc8ec,
-    #ccc6ef,
-    #c8c1ef,
-    #c4bdef,
-    #c0b8ef,
-    #b8afec,
-    #b0a6e8,
-    #a89de5,
-    #a094e1
-  );
-  color: #333646;
+  background-color: #20222e;
+  color: white;
 }
 .skills h1 {
   padding-bottom: 4rem;
   font-weight: bold;
 }
 .skills span {
-  color: #333646;
+  //color: #333646;
+  color: white;
 }
 
 .skills img:hover {
