@@ -10,3 +10,18 @@ footer p {
   margin: 0;
   padding-top: 1rem;
 }
+
+.footer-border {
+  text-align: center;
+  border-top: 5px solid;
+  border-image: linear-gradient(
+      to right,
+      grey 25%,
+      yellow 25%,
+      yellow 50%,
+      red 50%,
+      red 75%,
+      teal 75%
+    )
+    5;
+}

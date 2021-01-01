@@ -1,5 +1,8 @@
 import React from "react";
-import { Container, Card, Row, Col, Button, Badge } from "react-bootstrap";
+import { Container, Card, Row, Col, Badge } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import "./projects.scss";
 
 export default function Projects({ userData }, collapse) {
@@ -46,15 +49,12 @@ export default function Projects({ userData }, collapse) {
                   ) : (
                     <Card.Text>{project.summary}</Card.Text>
                   )} */}
-                    <Button
-                      size="sm"
-                      variant="outline-success"
-                      href={project.githubUrl}
-                      className="sourceCode"
-                    >
-                      {" "}
-                      Source Code
-                    </Button>
+                    <a href={project.githubUrl}>
+                      <FontAwesomeIcon icon={faGithub} size="lg" />
+                    </a>
+                    <a href={project.website} style={{ marginLeft: "0.5rem" }}>
+                      <FontAwesomeIcon icon={faExternalLinkAlt} size="1px" />
+                    </a>
                     <br />
                     {project.languages.map((language, i) => (
                       <Badge key={i} className="language">
