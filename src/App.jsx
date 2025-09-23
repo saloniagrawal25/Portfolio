@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { EatLoading } from "react-loadingg";
+// import { EatLoading } from "react-loadingg";
 import Navbar from "./components/Header";
 import Footer from "./components/Footer";
 import Pages from "./pages";
@@ -24,7 +24,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <EatLoading size={"large"} />
+        {/* <EatLoading size={"large"} /> */}
       </div>
     );
   }

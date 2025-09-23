@@ -5,17 +5,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import "./projects.scss";
 
-export default function Projects({ userData }, collapse) {
-  // const MAX_LENGTH = 50;
-  //const sliceNum = 5;
-  // const [projects, setProjects] = useState(userData.projects);
-
-  // function showMore(collapse) {
-  //   !collapse
-  //     ? setProjects(userData.projects)
-  //     : setProjects(userData.projects.slice(0, sliceNum));
-  // }
-  // showMore(collapse);
+export default function Projects({ userData }) {
+  if (!userData.projects) return null;
   return (
     <div className="projects">
       <Container>
@@ -25,30 +16,29 @@ export default function Projects({ userData }, collapse) {
             <Col key={index} lg={4} md={6} sm={12}>
               {project.website && (
                 <Card className="cards">
-                  {project.images.map((image, i) => (
-                    <div key={i}>
-                      {project.website ? (
-                        <a href={project.website}>
-                          <Card.Img
-                            variant="top"
-                            src={image.resolutions.desktop.url}
-                          />
-                        </a>
-                      ) : (
-                        <Card.Img
-                          variant="top"
-                          src={image.resolutions.desktop.url}
-                        />
-                      )}
-                    </div>
-                  ))}
+                  {project?.images &&
+                    (() => {
+                      const firstImage = Object.values(project.images)[0];
+                      return firstImage ? (
+                        <div>
+                          {project.website ? (
+                            <a href={project.website}>
+                              <Card.Img
+                                variant="top"
+                                src={firstImage.resolutions.desktop.url}
+                              />
+                            </a>
+                          ) : (
+                            <Card.Img
+                              variant="top"
+                              src={firstImage.resolutions.desktop.url}
+                            />
+                          )}
+                        </div>
+                      ) : null;
+                    })()}
                   <Card.Body>
                     <Card.Title>{project.displayName}</Card.Title>
-                    {/* {project.description.length < MAX_LENGTH ? (
-                    <Card.Text>{project.description}</Card.Text>
-                  ) : (
-                    <Card.Text>{project.summary}</Card.Text>
-                  )} */}
                     <a href={project.githubUrl}>
                       <FontAwesomeIcon icon={faGithub} size="lg" />
                     </a>
